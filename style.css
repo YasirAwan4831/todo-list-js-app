@@ -1,0 +1,152 @@
+/* Importing Google Font */
+@import url('https://fonts.googleapis.com/css2?family=Poppins&display=swap');
+
+/* Reset default styles */
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    font-family: 'Poppins', sans-serif;
+}
+
+/* Body styling with background image and Flexbox layout */
+body {
+    background: url('sre/bg.jpg') no-repeat center center fixed;
+    background-size: cover;
+    min-height: 100vh;
+    color: #333;
+
+    /* Flexbox to push footer down */
+    display: flex;
+    flex-direction: column;
+}
+
+/* Main container that grows to fill available space */
+.container {
+    flex-grow: 1;
+    background-color: rgba(255, 255, 255, 0.9);
+    width: 90%;
+    max-width: 750px; 
+    margin: 40px auto;
+    border-radius: 12px;
+    padding: 30px 20px;
+    box-shadow: 0 4px 20px rgba(0, 0, 0, 0.2);
+}
+
+
+/* Input area */
+.input-container {
+    text-align: center;
+    margin-bottom: 20px;
+}
+
+.input-container h1 {
+    margin-bottom: 15px;
+    font-size: 28px;
+    color: #2e2e2e;
+}
+
+.input-container input[type="text"] {
+    width: 60%;
+    padding: 12px;
+    border: 1px solid #aaa;
+    border-radius: 6px;
+    font-size: 16px;
+}
+
+.input-container input[type="button"] {
+    padding: 12px 24px;
+    margin-left: 10px;
+    background-color: #3da33d;
+    color: white;
+    border: none;
+    border-radius: 6px;
+    font-weight: bold;
+    cursor: pointer;
+    transition: background-color 0.3s ease;
+}
+
+/* Hover effect on Add button */
+.input-container input[type="button"]:hover {
+    background-color: #2e7d32;
+}
+
+/* To-do list styles */
+ul {
+    list-style: none;
+    padding: 0;
+}
+
+ul li {
+    background-color: #f2f2f2;
+    margin-bottom: 12px;
+    padding: 10px 16px;
+    border-radius: 8px;
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    transition: background-color 0.3s ease;
+}
+
+/* Hover effect on to-do item */
+ul li:hover {
+    background-color: #e0e0e0;
+}
+
+/* Text inside list item */
+ul li p {
+    flex-grow: 1;
+    margin-right: 10px;
+}
+
+/* Common button styles */
+.btn {
+    padding: 6px 12px;
+    border: none;
+    border-radius: 6px;
+    font-weight: 600;
+    font-size: 14px;
+    cursor: pointer;
+    transition: all 0.3s ease;
+}
+
+/* Edit button style */
+.editBtn {
+    background-color: #007bff;
+    color: white;
+    margin-right: 8px;
+}
+
+.editBtn:hover {
+    background-color: #0056b3;
+}
+
+/* Delete button style */
+.deleteBtn {
+    background-color: #dc3545;
+    color: white;
+}
+
+.deleteBtn:hover {
+    background-color: #b21f2d;
+}
+
+/* Footer styling */
+footer {
+    text-align: center;
+    padding: 16px;
+    background-color: rgba(255, 255, 255, 0.8);
+    font-size: 14px;
+
+    /* Key line to keep footer at bottom */
+    margin-top: auto;
+}
+
+footer a {
+    color: #007bff;
+    text-decoration: none;
+}
+
+footer a:hover {
+    text-decoration: underline;
+}
